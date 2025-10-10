@@ -7,9 +7,8 @@ git ls-files
 ## Read
 README.md
 adws/README.md
-.claude/commands/conditional_docs.md - this is a guide for you to determine which documentation to read based on the upcoming task.
+.claude/commands/util/conditional_docs.md - this is a guide for you to determine which documentation to read based on the upcoming task.
 
 
 ## Read and Execute
-.claude/commands/init/install.md
-.claude/commands/init/check_env.md
+.claude/commands/init/set_up.md

@@ -1,18 +1,20 @@
 # Feature Planning
 
-Create a new plan to implement the `Feature` using the exact specified markdown `Plan Format`. Follow the `Instructions` to create the plan use the `Relevant Files` to focus on the right files.
+- Create a new plan to implement the `Feature` using the exact specified markdown `Plan Format`. 
+- Follow the `Instructions` to create the plan use the `Relevant Files` to focus on the right files.
 
 ## Variables
-issue_number: $1
-adw_id: $2
-issue_json: $3
+- issue_number: $1
+- adw_id: $2
+- issue_json: $3
 
 ## Instructions
 
 - IMPORTANT: You're writing a plan to implement a net new feature based on the `Feature` that will add value to the application.
 - IMPORTANT: The `Feature` describes the feature that will be implemented but remember we're not implementing a new feature, we're creating the plan that will be used to implement the feature based on the `Plan Format` below.
-- Create the plan in the `specs/` directory with filename: `issue-{issue_number}-adw-{adw_id}-sdlc_planner-{descriptive-name}.md`
-  - Replace `{descriptive-name}` with a short, descriptive name based on the feature (e.g., "add-auth-system", "implement-search", "create-dashboard")
+- Create the plan in the `specs/features` directory with filename: `issue-{issue_number}-adw-{adw_id}-{descriptive_name}.md`
+  - Replace `{descriptive_name}` with the `title` from the issue_json.
+  - Descriptive name based on the feature title (e.g., "add_auth_system", "implement_search", "create_dashboard")
 - Use the `Plan Format` below to create the plan. 
 - Research the codebase to understand existing patterns, architecture, and conventions before planning the feature.
 - IMPORTANT: Replace every <placeholder> in the `Plan Format` with the requested value. Add as much detail as needed to implement the feature successfully.
