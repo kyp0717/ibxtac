@@ -1,6 +1,6 @@
 # Feature Planning
 
-- Create a new plan to implement the `Feature` using the exact specified markdown `Plan Format`. 
+- Create a two plans to implement and test the `Feature` using the exact specified markdown `Plan Format`. 
 - Follow the `Instructions` to create the plan use the `Relevant Files` to focus on the right files.
 
 ## Variables
@@ -35,8 +35,9 @@
 
 Focus on the following files:
 - `README.md` - Contains the project overview and instructions.
-- `app/server/**` - Contains the codebase server.
-- `app/client/**` - Contains the codebase client.
+- `app/tws/**` - Contains the python codebase for TWS client.
+- `app/server/**` - Contains the python codebase for http server for TWS Client
+- `app/client/**` - Contains the typescript codebase for http client.
 - `scripts/**` - Contains the scripts to start and stop the server + client.
 - `adws/**` - Contains the AI Developer Workflow (ADW) scripts.
 
