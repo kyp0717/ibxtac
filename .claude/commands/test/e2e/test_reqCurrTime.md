@@ -1,18 +1,18 @@
 # E2E Test: Basic Query Execution
 
-Test basic query functionality in the Natural Language SQL Interface application.
+Test basic functionality in the TWS frontend application.
 
 ## User Story
 
 As a user  
-I want to query my data using natural language  
-So that I can access information without writing SQL
+I want to test connection to TWS 
+So that I can access information without user typing or writing
 
 ## Test Steps
 
 1. Navigate to the `Application URL`
 2. Take a screenshot of the initial state
-3. **Verify** the page title is "Natural Language SQL Interface"
+3. **Verify** the page title is "TWS Frontend"
 4. **Verify** core UI elements are present:
    - Query input textbox
    - Query button

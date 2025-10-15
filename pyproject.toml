@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ibxtac"
+version = "0.1.0"
+description = "Interactive Brokers TWS Trading Application Client"
+authors = [
+    {name = "IBxTAC Team", email = "team@ibxtac.com"},
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "ibapi>=9.81.1",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pytest>=8.3.0",
+    "python-multipart>=0.0.12",
+    "pydantic>=2.0.0",
+    "httpx>=0.25.0",
+    "requests>=2.32.4",
+    "ruff>=0.14.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest-asyncio",
+    "pytest-cov",
+    "black",
+    "isort",
+    "mypy",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "app/backend/tests",
+    "app/tws/tests",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
