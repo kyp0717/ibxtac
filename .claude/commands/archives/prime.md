@@ -1,16 +1,16 @@
-# Set Up 
-- This install directive is different from prime slash command.
-- Prime slash command should be used every time a new claude session is created or clear.
-- Install slash command install packages and dependencies within a repo or branch.
+# Prime
+> Execute the following sections to understand the codebase then summarize your understanding.
 
 ## Read
 .env.sample (never read .env)
 ./app/tws/.env.sample (never read .env)
 ./app/backend/.env.sample (never read .env)
+README.md
+adws/README.md
+.claude/commands/util/conditional_docs.md - this is a guide for you to determine which documentation to read based on the upcoming task.
 
 ## Run
 - git ls-files
-- ./claude/command/init/check_env.md
 - Think through each of these steps to make sure you don't miss anything
 - Initialize a new uv virtual environment for python development if it does not exist
 - Install dependencies

@@ -10,8 +10,8 @@ Proactively identify and fix issues in the application before they impact users 
 - Verify build processes and dependencies
 - Ensure the application is in a healthy state
 
-## Variables
 
+## Variables
 TEST_COMMAND_TIMEOUT: 5 minutes
 
 ## Instructions

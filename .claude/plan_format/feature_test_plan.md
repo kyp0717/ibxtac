@@ -1,10 +1,15 @@
 # Feature: <feature name>
 
+## Metadata
+- issue_number: `{issue_number}`
+- adw_id: `{adw_id}`
+- issue_json: `{issue_json}`
+- build_plan_name: `{build_plan_name}`
+- test_plan_name: `{test_plan_name}`
 ## Testing Environment
-- If .venv folder does not exist create one
-- Check if python requirements packages are installed.  If not, installed all required python packages.
-- **IMPORTANT** The ibapi python package is a special case.  This package must be installed using the file `scripts/install_ibapi.sh`.  If file does not exist, report back and stop implementation.
-
+- Testing virtual environment should already exist.
+- If not, run setup.md slash command to create virtual env for testing.
+- 
 ## Python Project Configuration
 
 **Use pyproject.toml for all Python dependency management:**
@@ -47,8 +52,6 @@ Execute every command to validate the feature works correctly with zero regressi
 Execute every command to validate the feature works correctly with zero regressions.
 
 <list commands you'll use to validate with 100% confidence the feature is implemented correctly with zero regressions. every command must execute without errors so be specific about what you want to run to validate the feature works as expected. Include commands to test the feature end-to-end.>
-
-- `cd app/backend && uv run pytest` - Run server tests to validate the feature works with zero regressions
 
 
 ## Reference

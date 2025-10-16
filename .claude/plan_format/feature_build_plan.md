@@ -1,9 +1,11 @@
 # Feature: <feature name>
 
 ## Metadata
-issue_number: `{issue_number}`
-adw_id: `{adw_id}`
-issue_json: `{issue_json}`
+- issue_number: `{issue_number}`
+- adw_id: `{adw_id}`
+- issue_json: `{issue_json}`
+- build_plan_name: `{build_plan_name}`
+- test_plan_name: `{test_plan_name}`
 
 ## Feature Description
 <describe the feature in detail, including its purpose and value to users>
@@ -43,3 +45,7 @@ IMPORTANT: Execute every step in order, top to bottom.
 - Testing can be found in a separate plan.
 ## Notes
 <optionally list any additional notes, future considerations, or context that are relevant to the feature that will be helpful to the developer>
+
+c00223669
+
+c00223669-00

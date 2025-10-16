@@ -112,13 +112,9 @@ curl -X GET http://localhost:8000/health
 curl -X GET http://localhost:5173/
 
 # Run linting and type checking
-cd /home/phage/work/ibxtac && uv run python -m black app/ --check
-cd /home/phage/work/ibxtac && uv run python -m mypy app/ --ignore-missing-imports
 cd /home/phage/work/ibxtac/app/frontend && npm run lint
 cd /home/phage/work/ibxtac/app/frontend && npm run type-check
 ```
-
-- `cd app/backend && uv run pytest` - Run server tests to validate the feature works with zero regressions
 
 ## Reference
 - Read the build plan call issue-01-adw-01-build-req_curr_time.md

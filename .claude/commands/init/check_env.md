@@ -1,10 +1,8 @@
-# Check UV Environment
-
-Check if a Python UV virtual environment exists in the current directory or project.
+# Check and Build Virtual Environment using UV
+- Check for Python UV virtual environment.
+- If there none, build one in the current directory or project.
 
 ## Check for uv virtual env and dependencies
-
-### Run env check
 ```bash
 # Check for .venv directory (default UV environment location)
 if [ -d ".venv" ]; then
@@ -51,7 +49,7 @@ fi
 
 echo ""
 
-# Check for uv.lock file
+## Check for uv.lock file
 if [ -f "uv.lock" ]; then
     echo "🔒 Found uv.lock file"
     echo "Lock file size: $(ls -lh uv.lock | awk '{print $5}')"
